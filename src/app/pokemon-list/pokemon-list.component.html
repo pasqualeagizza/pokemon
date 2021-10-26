@@ -13,10 +13,9 @@
         <tr>
             <td><img src="{{ pokemon.sprites.front_default }}"></td>
             <td> {{ pokemon.id }}</td>
-            <td> {{ pokemon.name }}</td>
+            <td> {{ pokemon.name | uppercase }}</td>
             <td> {{ pokemon.weight }} </td>            
             <td> {{ pokemon.height }} </td>
-            <td></td>
             <td><button type="button" class="btn btn-primary btn-sm">Accetta</button></td>
             <td><button type="button" class="btn btn-danger btn-sm">Rifiuta</button></td>
         </tr>

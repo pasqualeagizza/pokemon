@@ -13,7 +13,7 @@ export class DataService {
 
   getPokemon(): Observable<IPokemon>{
     const numeroRandom = Math.floor((Math.random() * 898) + 1);
-    return this.http.get<IPokemon>(`https://pokeapi.co/api/v2/pokemon/${numeroRandom}`);;
+    return this.http.get<IPokemon>(`https://pokeapi.co/api/v2/pokemon/${numeroRandom}`);
   }
 
 }
